@@ -1,6 +1,7 @@
 resource "aws_security_group" "example_ec2" {
   name = "example-ec2"
 
+  // インスタンスへの入力時の設定
   ingress {
     from_port   = 80
     to_port     = 80
@@ -8,6 +9,7 @@ resource "aws_security_group" "example_ec2" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  // インスタンスからの出力時の設定
   egress {
     from_port   = 0
     to_port     = 0

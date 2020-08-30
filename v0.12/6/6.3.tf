@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "public" {
   bucket = "public-pragmatic-terraform-on-aws"
+  // アクセス権
   acl    = "public-read"
 
   cors_rule {

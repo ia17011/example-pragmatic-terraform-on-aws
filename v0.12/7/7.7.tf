@@ -1,3 +1,5 @@
+// インターネットから隔離されたネットワーク
+// DBサーバなどインターネットからアクセスしないリソースを配置する
 resource "aws_subnet" "private" {
   vpc_id                  = aws_vpc.example.id
   cidr_block              = "10.0.64.0/24"
