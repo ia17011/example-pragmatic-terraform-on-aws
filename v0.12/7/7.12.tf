@@ -1,3 +1,5 @@
+// AZを変えることでマルチAZ化
+// 各サブネットはCIDRブロックが重複しちゃダメ
 resource "aws_subnet" "public_0" {
   vpc_id                  = aws_vpc.example.id
   cidr_block              = "10.0.1.0/24"

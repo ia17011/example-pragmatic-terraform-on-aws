@@ -1,6 +1,6 @@
-variable "name" {}
-variable "policy" {}
-variable "identifier" {}
+variable "name" {} // IAMロールとIAMポリシーの名前
+variable "policy" {} // ポリシードキュメント
+variable "identifier" {} /// IAMロールを紐付けるAWSのサービス識別子
 
 resource "aws_iam_role" "default" {
   name               = var.name
